@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Домашнє завдання</title>
+</head>
+<body>
+
+  <h2>Завдання 1: Підписка на розсилку</h2>
+  <form action="#" method="post">
+    <label for="email">Підпишіться на розсилку</label><br>
+    <input type="email" id="email" name="email" placeholder="E-mail" required>
+    <button type="submit">Підписатися</button>
+  </form>
+
+  <h2>Завдання 2: Анкета відвідувача ресторану</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Контактна інформація</legend>
+      <label>Ім’я:<br><input type="text" name="name" required></label><br>
+      <label>Телефон:<br><input type="tel" name="phone" placeholder="000-000-00-00" required></label><br>
+      <label>Email:<br><input type="email" name="email" required></label><br>
+      <label>Дата відвідування:<br><input type="date" name="visit-date" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Персональна інформація</legend>
+      <label>Вік:<br><input type="number" name="age" min="1"></label><br>
+      <label>Улюблена кухня:<br><input type="text" name="cuisine"></label><br>
+      <label>Які ще страви ви б хотіли бачити в меню?<br>
+        <textarea name="suggestions" rows="3"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Оцінка нашого закладу</legend>
+      <p>Чому ви обрали наш заклад?</p>
+      <label><input type="checkbox" name="reason" value="location"> Поряд з місцем роботи</label><br>
+      <label><input type="checkbox" name="reason" value="ad"> Побачив рекламу</label><br>
+      <label><input type="checkbox" name="reason" value="friends"> Порадили друзі</label><br>
+      <label><input type="checkbox" name="reason" value="price-quality"> Найкраще співвідношення ціни і якості</label>
+
+      <p>Чи будете ви рекомендувати наш заклад своїм знайомим?</p>
+      <label><input type="radio" name="recommend" value="yes" required> Так</label>
+      <label><input type="radio" name="recommend" value="no"> Ні</label><br>
+    </fieldset>
+
+    <button type="submit">Відправити</button>
+  </form>
+
+</body>
+</html>
